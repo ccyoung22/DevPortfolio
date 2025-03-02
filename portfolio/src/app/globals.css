@@ -1,6 +1,27 @@
 * {
   margin: 0;
-  font-family: "Archivo";
+  scrollbar-width: thin;
+  scrollbar-color: rgb(0, 0, 0) rgb(243, 239, 235); /* Firefox */
+}
+
+@font-face {
+  font-family: NohemiLight;
+  src: url("/Nohemi/Nohemi-Light.ttf");
+}
+
+@font-face {
+  font-family: NohemiRegular;
+  src: url("/Nohemi/Nohemi-Regular.ttf");
+}
+
+@font-face {
+  font-family: NohemiSemiBold;
+  src: url("/Nohemi/Nohemi-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: NohemiBlack;
+  src: url("/Nohemi/Nohemi-Black.ttf");
 }
 
 @font-face {
@@ -11,8 +32,4 @@
 @font-face {
   font-family: Archivo;
   src: url("/ArchivoNarrow.ttf") format("truetype");
-}
-
-p {
-  font-family: "Archivo";
 }
