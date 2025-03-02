@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import Lenis from "lenis";
 import styles from "./page.module.css";
 import Hero from "./components/Hero/Hero";
@@ -15,7 +15,11 @@ export default function Home() {
     const lenis = new Lenis({
       autoRaf: true,
     });
+    lenis.on("scroll", (e) => {
+      console.log(e); // For example, you can log scroll events
+    });
   }, []);
+
   return (
     <main className={styles.main}>
       <Navbar />

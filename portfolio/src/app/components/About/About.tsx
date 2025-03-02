@@ -1,7 +1,7 @@
 "use client";
 import styles from "./About.module.css";
 import { useScroll, motion, useTransform, MotionValue } from "framer-motion";
-import { useRef, useEffect } from "react";
+import { useRef } from "react";
 
 const paragraph =
   "Drawn to software development for its blend of creativity and problem-solving, I’ve cut my teeth building a strong foundation in full-stack development at the School of Code. My background in design, animation, and entrepreneurship fuels my passion for web development.";
