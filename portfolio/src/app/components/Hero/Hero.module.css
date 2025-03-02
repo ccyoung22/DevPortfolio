@@ -5,14 +5,15 @@
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
+  overflow: visible;
 }
 
 .title {
-  font-size: 130px;
+  font-size: 140px;
   margin: 0;
   padding: 0;
   font-family: "NohemiBlack";
-  line-height: 0.6em;
+  line-height: 0.65em;
 }
 
 .caitlin {
@@ -23,14 +24,14 @@
 
 .caitlin:hover {
   -webkit-text-stroke: 1px rgb(0, 0, 0);
-  text-shadow: 0 0 3px black, 0 0 6px black, 0 0 12px black, 0 0 25px black; /* Fallback for other browsers */
+  text-shadow: 0 0 3px black, 0 0 6px black, 0 0 12px black, 0 0 25px black;
 }
 
 .description {
-  text-align: right;
-  padding-bottom: 40vh;
   font-family: "NohemiLight";
   font-size: 12px;
+  text-align: right;
+  margin-bottom: 40vh;
 }
 
 .portText {

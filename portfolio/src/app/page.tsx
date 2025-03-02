@@ -1,3 +1,6 @@
+"use client";
+import { useEffect, useState } from "react";
+import Lenis from "lenis";
 import styles from "./page.module.css";
 import Hero from "./components/Hero/Hero";
 import About from "./components/About/About";
@@ -8,6 +11,11 @@ import Skills from "./components/Skills/Skills";
 import Story from "./components/Story/Story";
 
 export default function Home() {
+  useEffect(() => {
+    const lenis = new Lenis({
+      autoRaf: true,
+    });
+  }, []);
   return (
     <main className={styles.main}>
       <Navbar />
