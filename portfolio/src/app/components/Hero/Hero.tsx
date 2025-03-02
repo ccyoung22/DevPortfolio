@@ -31,7 +31,7 @@ export default function Hero() {
         // }}
         >
           <h1 className={styles.title}>
-            hi i'm <span className={styles.caitlin}>Caitlin</span>
+            hi i&apos;m <span className={styles.caitlin}>Caitlin</span>
           </h1>
         </motion.div>
         <motion.div
