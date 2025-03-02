@@ -21,14 +21,14 @@ export default function Hero() {
     <>
       <section className={styles.container}>
         <motion.div
-          animate={{
-            y: -scrollY * 0.3,
-          }}
-          transition={{
-            type: "spring",
-            stiffness: 80,
-            damping: 15,
-          }}
+        // animate={{
+        //   y: -scrollY * 0.3,
+        // }}
+        // transition={{
+        //   type: "spring",
+        //   stiffness: 80,
+        //   damping: 15,
+        // }}
         >
           <h1 className={styles.title}>
             hi i'm <span className={styles.caitlin}>Caitlin</span>
@@ -45,9 +45,10 @@ export default function Hero() {
           }}
         >
           <p className={styles.description}>
-            FRONT END WEB DEVELOPER <br />
-            BASED IN THE UK <br />
-            <span className={styles.portText}>PORTFOLIO © 202</span>5
+            FRONT END &#9965; WEB DEVELOPER <br />
+            BASED &#9734; IN THE UK ;
+            <br />
+            <span className={styles.portText}>PORTFOLIO © 202</span>5 &#9825;
           </p>
         </motion.div>
       </section>

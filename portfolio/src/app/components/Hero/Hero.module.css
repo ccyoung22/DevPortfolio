@@ -1,6 +1,6 @@
 .container {
   position: relative;
-  background-color: rgb(243, 239, 235);
+  background-color: transparent;
   height: 100vh;
   display: flex;
   align-items: flex-end;
@@ -17,8 +17,8 @@
 }
 
 .caitlin {
-  font-family: "NohemiRegular";
-  font-style: italic;
+  /* font-family: "NohemiRegular"; */
+  /* font-style: italic; */
   transition: all 0.5s ease;
 }
 

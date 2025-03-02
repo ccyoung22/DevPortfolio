@@ -1,8 +1,28 @@
 .container {
   position: relative;
   background-color: rgb(243, 239, 235);
-  height: 100vh;
+  height: 120vh;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.aboutText {
+  font-size: 40px;
+  font-family: "NohemiRegular";
+  padding: 80px;
+  line-height: 1;
+  letter-spacing: small;
+  display: flex;
+  flex-wrap: wrap;
+}
+.word {
+  margin-right: 12px;
+  margin-top: 12px;
+  position: relative;
+}
+
+.shadow {
+  position: absolute;
+  opacity: 0.1;
 }
