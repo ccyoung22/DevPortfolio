@@ -26,8 +26,8 @@ export default function Hero() {
           }}
           transition={{
             type: "spring",
-            stiffness: 100,
-            damping: 50,
+            stiffness: 80,
+            damping: 15,
           }}
         >
           <h1 className={styles.title}>
