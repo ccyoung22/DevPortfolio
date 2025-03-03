@@ -21,14 +21,14 @@ export default function Hero() {
     <>
       <section className={styles.container}>
         <motion.div
-        // animate={{
-        //   y: -scrollY * 0.3,
-        // }}
-        // transition={{
-        //   type: "spring",
-        //   stiffness: 80,
-        //   damping: 15,
-        // }}
+          animate={{
+            y: -scrollY * 0.3,
+          }}
+          transition={{
+            type: "spring",
+            stiffness: 80,
+            damping: 15,
+          }}
         >
           <h1 className={styles.title}>
             hi i&apos;m <span className={styles.caitlin}>Caitlin</span>

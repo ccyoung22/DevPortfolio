@@ -9,11 +9,12 @@
 
 .aboutText {
   font-size: 40px;
-  font-family: "NohemiRegular";
-  padding: 80px;
-  line-height: 1;
-  letter-spacing: small;
+  font-family: "NohemiLight";
+  padding: 150px;
+  line-height: 1.2;
+  letter-spacing: medium;
   display: flex;
+  text-align: center;
   flex-wrap: wrap;
 }
 .word {
@@ -24,5 +25,5 @@
 
 .shadow {
   position: absolute;
-  opacity: 0.1;
+  opacity: 0.3;
 }
