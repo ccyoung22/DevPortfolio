@@ -1,7 +1,19 @@
 * {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   scrollbar-width: thin;
   scrollbar-color: rgb(0, 0, 0) rgb(243, 239, 235); /* Firefox */
+}
+
+body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+main {
+  width: 100%;
+  overflow-x: hidden;
 }
 
 @font-face {
@@ -32,4 +44,10 @@
 @font-face {
   font-family: Archivo;
   src: url("/ArchivoNarrow.ttf") format("truetype");
+}
+
+@media (max-width: 768px) {
+  main {
+    max-width: 768px;
+  }
 }

@@ -1,9 +1,9 @@
 .container {
-  position: relative;
   background-color: rgb(243, 239, 235);
   height: 120vh;
   display: flex;
   align-items: center;
+  width: 100%;
   justify-content: center;
 }
 
@@ -26,4 +26,20 @@
 .shadow {
   position: absolute;
   opacity: 0.3;
+}
+
+@media (max-width: 768px) {
+  .container {
+    min-height: 100vh; /* Ensure full height on mobile */
+  }
+
+  .aboutText {
+    font-size: 24px; /* Smaller font for mobile */
+    padding: 30px; /* Much less padding on mobile */
+  }
+
+  .word {
+    margin-right: 8px; /* Slightly less spacing between words */
+    margin-top: 8px;
+  }
 }

@@ -3,10 +3,17 @@
   height: 6vh;
   display: flex;
   justify-content: space-between;
-  padding: 0px 32px 0px 15px;
+  padding: 0px 15px 0px 15px;
   align-items: center;
   position: fixed;
   z-index: 1000;
-  width: 96vw;
+  width: 100vw;
   font-family: "NohemiBlack";
+  font-size: 2.8vh;
+}
+
+@media (max-width: 932px) {
+  .container {
+    font-size: 2.4vh;
+  }
 }

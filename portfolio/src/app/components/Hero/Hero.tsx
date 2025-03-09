@@ -21,6 +21,7 @@ export default function Hero() {
     <>
       <section className={styles.container}>
         <motion.div
+          className={styles.titleWrapper}
           animate={{
             y: -scrollY * 0.3,
           }}
@@ -35,6 +36,7 @@ export default function Hero() {
           </h1>
         </motion.div>
         <motion.div
+          className={styles.descriptionWrapper}
           animate={{
             y: -scrollY * 0.7,
           }}
