@@ -4,7 +4,7 @@ import { useScroll, motion, useTransform, MotionValue } from "framer-motion";
 import { useRef } from "react";
 
 const paragraph =
-  "Hi, I’m Caitlin. For as long as I can remember, I’ve loved to create. Whether it’s through drawing, animation, building my own business, or more recently, software, I thrive on seeing a vision come to life.";
+  "For as long as I can remember, I’ve loved to create. Whether it’s through animation, building my own business, or more recently software development, I thrive on seeing a vision come to life.";
 
 const words = paragraph.split(" ");
 
@@ -13,7 +13,7 @@ export default function About() {
 
   const { scrollYProgress } = useScroll({
     target: element,
-    offset: ["start 0.4", "start 0.25"],
+    offset: ["start 0.8", "start -0.2"],
   });
 
   return (

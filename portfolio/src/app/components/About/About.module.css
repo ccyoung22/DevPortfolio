@@ -1,6 +1,6 @@
 .container {
   background-color: rgb(243, 239, 235);
-  height: 120vh;
+  height: 110vh;
   display: flex;
   align-items: center;
   width: 100%;
@@ -8,13 +8,13 @@
 }
 
 .aboutText {
-  font-size: 40px;
-  font-family: "NohemiLight";
+  font-size: 7vh;
+  font-family: "NohemiSemiBold";
   padding: 150px;
   line-height: 1.2;
   letter-spacing: medium;
   display: flex;
-  text-align: center;
+  text-align: right;
   flex-wrap: wrap;
 }
 .word {
@@ -25,16 +25,18 @@
 
 .shadow {
   position: absolute;
-  opacity: 0.3;
+  opacity: 0.6;
+  color: transparent; /* Transparent fill */
+  text-shadow: 0 0 0.7vh black;
 }
 
 @media (max-width: 768px) {
   .container {
-    min-height: 100vh; /* Ensure full height on mobile */
+    min-height: 90vh; /* Ensure full height on mobile */
   }
 
   .aboutText {
-    font-size: 24px; /* Smaller font for mobile */
+    font-size: 5vh; /* Smaller font for mobile */
     padding: 30px; /* Much less padding on mobile */
   }
 

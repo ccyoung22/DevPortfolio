@@ -43,7 +43,7 @@
 
 .description {
   font-family: "NohemiLight";
-  font-size: 1.8vh;
+  font-size: 2vh;
   text-align: right;
 }
 
@@ -74,6 +74,6 @@
     line-height: 0.8;
   }
   .description {
-    font-size: 1.6vh;
+    font-size: 2vh;
   }
 }
