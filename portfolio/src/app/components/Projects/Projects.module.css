@@ -1,8 +1,4 @@
 .container {
-  position: relative;
-  background-color: rgb(243, 239, 235);
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  border: green 2px solid;
+  position: relative; /* Changed to relative so that sticky can work within this context */
 }

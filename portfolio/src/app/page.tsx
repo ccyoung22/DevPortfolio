@@ -29,9 +29,7 @@ export default function Home() {
       <section className={styles.aboutContainer}>
         <About />
       </section>
-      <section className={styles.projectsContainer}>
-        <Projects />
-      </section>
+      <Projects />
       <section className={styles.skillsContainer}>
         <Skills />
       </section>
