@@ -50,7 +50,7 @@ export default function Card({
           className={styles.bodyContainer}
           style={{
             backgroundColor: colour,
-            boxShadow: `0 0 4vh 5vh ${colour} `,
+            boxShadow: `0 0 4vh 4vh ${colour} `,
           }}
         >
           <div className={styles.descriptionContainer}>
