@@ -1,4 +1,12 @@
-export const projects = [
+interface Project {
+  title: string;
+  description: string;
+  src: string;
+  link: string;
+  github: string;
+}
+
+export const projects: Project[] = [
   {
     title: "Say It In A Letter",
     description:
