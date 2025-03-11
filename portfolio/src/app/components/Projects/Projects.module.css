@@ -1,4 +1,11 @@
 .container {
-  border: green 2px solid;
   position: relative; /* Changed to relative so that sticky can work within this context */
+}
+
+.projectTitle {
+  font-family: "NohemiBlack";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10vh;
 }
