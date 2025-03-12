@@ -6,7 +6,6 @@
   justify-content: center;
   position: sticky;
   top: 0px;
-  margin-bottom: 30vh;
 }
 
 .card {
@@ -40,8 +39,18 @@
   width: 100%;
   height: 100%;
   display: flex;
-  flex-direction: column;
-  margin-top: 3vh;
+  margin-top: 5vh;
+}
+
+.linkIcon {
+  width: 2.5vw;
+  height: 2.5vw;
+}
+
+.icon {
+  margin-left: 2vw;
+  width: 2.5vw;
+  height: 2.5vw;
 }
 
 .bodyContainer {
@@ -67,7 +76,7 @@
   flex-direction: column;
   margin-right: 2vw;
   font-family: "Nohemi-Light";
-  font-size: 1.9vh;
+  font-size: 2.1vh;
   padding: 0px 1vw 0px 1vw;
 }
 

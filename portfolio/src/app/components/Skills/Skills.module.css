@@ -1,8 +1,46 @@
 .container {
   position: relative;
-  background-color: rgb(243, 239, 235);
+  background-color: #f8f5f3;
   height: 100vh;
   display: flex;
   align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.titleDiv {
+  height: 15vh;
+  display: flex;
+  align-items: center;
   justify-content: center;
+  font-family: "NohemiLight";
+  font-size: 3vh;
+  margin-top: 3vh;
+}
+
+.skillsContainer {
+  width: 70vw;
+  height: 50vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.skillItem {
+  background-color: black;
+  border: 0.2vw solid black;
+  padding: 1vw;
+  color: #f8f5f3;
+  margin: 1vw;
+  font-family: "NohemiBlack";
+  letter-spacing: 0.05em;
+  border-radius: 100vw / 1000%; /* Creates the pointy oval (almond) shape */
+  height: 7vh;
+  width: 10.5vw;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  text-align: center;
 }

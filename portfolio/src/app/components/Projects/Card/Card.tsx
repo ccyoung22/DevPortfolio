@@ -58,9 +58,25 @@ export default function Card({
               <p>{description}</p>
             </div>
             <div className={styles.linkDiv}>
-              <a href={link}>Link</a>
-              <br />
-              <a href={github}>Github</a>
+              <a href={link} target="_blank" rel="noopener noreferrer">
+                <Image
+                  src="/link-icon.png"
+                  alt="LinkedIn"
+                  width={40}
+                  height={40}
+                  className={styles.linkIcon}
+                />
+              </a>
+
+              <a href={github} target="_blank" rel="noopener noreferrer">
+                <Image
+                  src="/github-icon.png"
+                  alt="GitHub"
+                  width={40}
+                  height={40}
+                  className={styles.icon}
+                />
+              </a>
             </div>
           </div>
           <a href={link}>
