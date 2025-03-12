@@ -51,11 +51,40 @@
   text-align: center;
   box-shadow: 0 0 1.5vw 1.5vw rgba(0, 0, 0, 1);
   font-size: 1.6vw;
-  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .skillItem:hover {
   background-color: red;
   box-shadow: 0 0 1.5vw 1.5vw rgb(255, 0, 0);
   color: black;
+}
+
+@media (max-width: 768px) {
+  .container {
+    justify-content: flex-start;
+    height: 100vh;
+  }
+  .skillItem {
+    width: 30vw;
+    height: 4vh;
+    box-shadow: 0 0 3vw 1.5vw rgba(0, 0, 0, 1);
+    border-radius: 100vw / 900%; /* Creates the pointy oval (almond) shape */
+    font-size: 1.8vh;
+    margin: 3vw;
+  }
+
+  .skillsContainer {
+    width: 80vw;
+  }
+
+  .titleDiv {
+    display: flex;
+    height: 6vh;
+    align-items: center;
+    justify-content: center;
+    font-family: "NohemiThin";
+    font-size: 3.5vh;
+    margin-top: 4vh;
+    margin-bottom: 1.5vh;
+  }
 }

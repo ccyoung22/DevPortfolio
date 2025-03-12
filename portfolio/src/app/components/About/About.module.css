@@ -8,9 +8,9 @@
 }
 
 .aboutText {
-  font-size: 7vh;
+  font-size: 8vh;
   font-family: "NohemiSemiBold";
-  padding: 10vw 18vw 10vw 18vw;
+  padding: 10vw 16vw 10vw 16vw;
   line-height: 1.2;
   letter-spacing: medium;
   display: flex;
