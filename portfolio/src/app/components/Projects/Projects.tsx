@@ -2,7 +2,7 @@
 import styles from "./Projects.module.css";
 import { projects } from "../../data";
 import Card from "./Card/Card";
-import { motion, useScroll } from "framer-motion";
+import { useScroll } from "framer-motion";
 import { useRef } from "react";
 
 export default function Projects() {

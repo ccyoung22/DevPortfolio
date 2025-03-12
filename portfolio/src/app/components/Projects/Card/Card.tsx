@@ -53,10 +53,13 @@ export default function Card({
             boxShadow: `0 0 4vh 4vh ${colour} `,
           }}
         >
-          <div className={styles.descriptionContainer}>
-            <p>{description}</p>
+          <div className={styles.descriptionLinksContainer}>
+            <div className={styles.descriptionText}>
+              <p>{description}</p>
+            </div>
             <div className={styles.linkDiv}>
               <a href={link}>Link</a>
+              <br />
               <a href={github}>Github</a>
             </div>
           </div>
