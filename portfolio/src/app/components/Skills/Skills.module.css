@@ -1,10 +1,10 @@
 .container {
   position: relative;
   background-color: #f8f5f3;
-  height: 100vh;
+  height: 130vh;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   flex-wrap: wrap;
   flex-direction: column;
 }
@@ -14,13 +14,19 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: "NohemiLight";
-  font-size: 3vh;
-  margin-top: 3vh;
+  font-family: "NohemiThin";
+  font-size: 4.5vh;
+  margin-top: 6vh;
+  margin-bottom: 3vh;
+}
+
+.titleText {
+  /* text-shadow: 0 0 1vh rgba(0, 0, 0, 0.5), 0 0 1vh rgba(0, 0, 0, 0.5),
+    0 0 2vh rgba(0, 0, 0, 0.5); */
 }
 
 .skillsContainer {
-  width: 70vw;
+  width: 80vw;
   height: 50vh;
   display: flex;
   flex-wrap: wrap;
@@ -30,17 +36,26 @@
 
 .skillItem {
   background-color: black;
-  border: 0.2vw solid black;
+
   padding: 1vw;
   color: #f8f5f3;
-  margin: 1vw;
-  font-family: "NohemiBlack";
+  margin: 2.2vw;
+  font-family: "NohemiThin";
   letter-spacing: 0.05em;
   border-radius: 100vw / 1000%; /* Creates the pointy oval (almond) shape */
-  height: 7vh;
-  width: 10.5vw;
+  height: 6vh;
+  width: 9.5vw;
   align-items: center;
   justify-content: center;
   display: flex;
   text-align: center;
+  box-shadow: 0 0 1.5vw 1.5vw rgba(0, 0, 0, 1);
+  font-size: 1.6vw;
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skillItem:hover {
+  background-color: red;
+  box-shadow: 0 0 1.5vw 1.5vw rgb(255, 0, 0);
+  color: black;
 }
