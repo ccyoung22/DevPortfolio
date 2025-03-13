@@ -13,36 +13,42 @@ export default function Skills() {
   const containerRef = useRef<HTMLDivElement | null>(null);
   const titleRef = useRef<HTMLDivElement | null>(null);
 
-  const titleDelay = 0.5 + (skills.length - 1) * 0.08 + 0.5;
+  // const titleDelay = 0.5 + (skills.length - 1) * 0.08 + 0.5;
 
   const isContainerInView = useInView(containerRef, {
     once: false,
-    amount: 0.1,
+    amount: 0.001,
   });
 
   return (
     <>
-      <section className={styles.container}>
+      <section ref={titleRef} className={styles.container}>
         <motion.div
           className={styles.titleDiv}
-          ref={titleRef}
-          initial={{ opacity: 0, y: -80 }}
-          animate={
-            isContainerInView ? { opacity: 1, y: 0 } : { opacity: 0, y: -80 }
-          }
+          initial={{ y: 50 }}
+          animate={isContainerInView ? { y: 0 } : { y: 50 }}
           transition={{
-            type: "spring",
-            stiffness: 300,
-            damping: 12,
-            delay: isContainerInView ? titleDelay : 0,
+            duration: 0.8,
+            ease: "easeOut",
           }}
         >
           <p className={styles.titleText}>tools in my kit</p>
         </motion.div>
         <div className={styles.skillsContainer} ref={containerRef}>
-          {skills.map((skill, index) => (
-            <SkillItem key={index} skill={skill} index={index} />
-          ))}
+          <motion.div
+            className={styles.skillsContainer}
+            initial={{ y: 200 }}
+            animate={isContainerInView ? { y: 0 } : { y: 200 }}
+            transition={{
+              duration: 2,
+              ease: "easeOut",
+              delay: 0.2,
+            }}
+          >
+            {skills.map((skill, index) => (
+              <SkillItem key={index} skill={skill} index={index} />
+            ))}
+          </motion.div>
         </div>
       </section>
     </>
@@ -56,7 +62,7 @@ function SkillItem({ skill, index }: SkillItemProps) {
     amount: 0.2,
   });
 
-  const delay = index * 0.08;
+  const delay = index * 0.05;
 
   return (
     <motion.div
@@ -66,7 +72,7 @@ function SkillItem({ skill, index }: SkillItemProps) {
       transition={{
         type: "spring",
         stiffness: 300,
-        damping: 15,
+        damping: 30,
         delay: isInView ? delay : 0,
       }}
     >

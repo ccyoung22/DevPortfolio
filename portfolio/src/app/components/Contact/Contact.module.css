@@ -1,6 +1,6 @@
 .container {
   position: relative;
-  height: 700px;
+  height: 800px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -10,7 +10,74 @@
 .stickyFooter {
   position: fixed;
   background-color: rgb(255, 30, 0);
-  height: 700px;
+  height: 800px;
   width: 100%;
   bottom: 0;
+}
+
+.contentContainer {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  height: 800px;
+  width: 100%;
+}
+
+.titleText {
+  font-family: "NohemiBlack";
+  font-size: 18vw;
+  line-height: 18vh;
+  grid-row: 3/ 5;
+  grid-column: 1/4;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+
+.description {
+  font-family: "NohemiLight";
+  font-size: 2vh;
+  text-align: right;
+}
+
+.portText {
+  font-family: "NohemiSemiBold";
+}
+
+.descriptionContainer {
+  height: auto;
+  margin-right: 0.5vw;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  grid-row: 4;
+  grid-column: 4;
+}
+
+.contactText {
+  grid-row: 2;
+  grid-column: 3/5;
+  padding: 0 26vh 0 32vh;
+  margin-bottom: 8vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  font-family: "NohemiRegular";
+  font-size: 2vh;
+  line-height: 120%;
+}
+
+.bioText {
+  padding-bottom: 3vh;
+}
+
+.contactDetails {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon {
+  margin-right: 1.5vw;
 }

@@ -10,11 +10,12 @@
 .aboutText {
   font-size: 8vh;
   font-family: "NohemiSemiBold";
-  padding: 10vw 16vw 10vw 16vw;
+  padding: 10vw 14vw 10vw 14vw;
   line-height: 1.2;
   letter-spacing: medium;
   display: flex;
-  text-align: right;
+  text-align: justify;
+  text-align-last: right;
   flex-wrap: wrap;
 }
 .word {
