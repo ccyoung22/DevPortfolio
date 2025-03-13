@@ -60,8 +60,8 @@ export default function Card({
             <div className={styles.linkDiv}>
               <a href={link} target="_blank" rel="noopener noreferrer">
                 <Image
-                  src="/link-icon.png"
-                  alt="LinkedIn"
+                  src="/Link-icon.png"
+                  alt="Link"
                   width={40}
                   height={40}
                   className={styles.linkIcon}

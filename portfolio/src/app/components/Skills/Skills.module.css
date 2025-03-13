@@ -84,7 +84,40 @@
     justify-content: center;
     font-family: "NohemiThin";
     font-size: 3.5vh;
-    margin-top: 4vh;
-    margin-bottom: 1.5vh;
+    margin-top: 5vh;
+    margin-bottom: 2.5vh;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .container {
+    justify-content: flex-start;
+    height: 100vh;
+  }
+
+  .skillItem {
+    width: 20vw; /* Wider for better spacing */
+    height: 5vh;
+    box-shadow: 0 0 2.5vw 1.2vw rgba(0, 0, 0, 1);
+    border-radius: 100vw / 900%;
+    font-size: 2vh;
+    margin: 2.5vw; /* Increased margin for improved spacing */
+  }
+
+  .skillsContainer {
+    width: 75vw; /* Wider for improved layout */
+
+    justify-content: flex-start;
+  }
+
+  .titleDiv {
+    display: flex;
+    height: 7vh;
+    align-items: center;
+    justify-content: center;
+    font-family: "NohemiThin";
+    font-size: 4vh;
+    margin-top: 3vh;
+    margin-bottom: 5vh;
   }
 }

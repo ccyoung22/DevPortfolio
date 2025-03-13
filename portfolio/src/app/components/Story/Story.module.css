@@ -1,8 +1,42 @@
 .container {
   position: relative;
-  background-color: rgb(243, 239, 235);
-  height: 80vh;
+  background-color: #f8f5f3;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+}
+
+.titleContainer {
+  font-family: "NohemiThin";
+  padding-bottom: 3.5vh;
+  font-size: 4vh;
+}
+
+.textContainer {
+  width: 90vw;
+  height: 80vh;
+  display: flex;
+  flex-direction: row;
+  font-family: "NohemiLight";
+  line-height: 3.1vh;
+  align-items: center;
+  justify-content: center;
+  font-size: 2vh;
+  text-align: justify;
+}
+
+.textHalf {
+  width: 40%;
+  height: 100%;
+  padding: 0vh 2.3vh 0vh 2.3vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.textSection {
+  padding: 1.3vh 0vh 1.3vh 0vh;
 }

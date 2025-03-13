@@ -16,7 +16,7 @@ export default function Home() {
       autoRaf: true,
     });
     lenis.on("scroll", (e) => {
-      console.log(e); // For example, you can log scroll events
+      console.log(e);
     });
   }, []);
 

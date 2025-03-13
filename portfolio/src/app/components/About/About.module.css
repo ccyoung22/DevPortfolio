@@ -36,12 +36,28 @@
   }
 
   .aboutText {
-    font-size: 5vh; /* Smaller font for mobile */
+    font-size: 4.8vh; /* Smaller font for mobile */
     padding: 30px; /* Much less padding on mobile */
   }
 
   .word {
     margin-right: 8px; /* Slightly less spacing between words */
     margin-top: 8px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .container {
+    min-height: 95vh; /* Slightly adjusted for tablet height */
+  }
+
+  .aboutText {
+    font-size: 4.5vh; /* Slightly larger font for tablets */
+    padding: 40px; /* Moderate padding for comfortable spacing */
+  }
+
+  .word {
+    margin-right: 10px; /* Balanced spacing for tablet layout */
+    margin-top: 10px;
   }
 }

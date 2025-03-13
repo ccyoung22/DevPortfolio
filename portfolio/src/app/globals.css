@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   scrollbar-width: thin;
-  scrollbar-color: rgb(0, 0, 0) rgb(243, 239, 235); /* Firefox */
+  scrollbar-color: rgb(0, 0, 0) #f8f5f3; /* Firefox */
 }
 
 body {
