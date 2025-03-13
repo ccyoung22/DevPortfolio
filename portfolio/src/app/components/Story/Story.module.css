@@ -11,13 +11,12 @@
 
 .titleContainer {
   font-family: "NohemiThin";
-  padding-bottom: 3.5vh;
   font-size: 4vh;
 }
 
 .textContainer {
   width: 90vw;
-  height: 80vh;
+  height: 70vh;
   display: flex;
   flex-direction: row;
   font-family: "NohemiLight";
@@ -33,8 +32,8 @@
   height: 100%;
   padding: 0vh 2.3vh 0vh 2.3vh;
   display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
 }
 

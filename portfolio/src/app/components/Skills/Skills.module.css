@@ -20,11 +20,6 @@
   margin-bottom: 3vh;
 }
 
-.titleText {
-  /* text-shadow: 0 0 1vh rgba(0, 0, 0, 0.5), 0 0 1vh rgba(0, 0, 0, 0.5),
-    0 0 2vh rgba(0, 0, 0, 0.5); */
-}
-
 .skillsContainer {
   width: 80vw;
   height: 50vh;
@@ -42,7 +37,7 @@
   margin: 2.2vw;
   font-family: "NohemiThin";
   letter-spacing: 0.05em;
-  border-radius: 100vw / 1000%; /* Creates the pointy oval (almond) shape */
+  border-radius: 100vw / 1000%;
   height: 6vh;
   width: 9.5vw;
   align-items: center;
@@ -54,8 +49,8 @@
 }
 
 .skillItem:hover {
-  background-color: red;
-  box-shadow: 0 0 1.5vw 1.5vw rgb(255, 0, 0);
+  background-color: rgb(255, 30, 0);
+  box-shadow: 0 0 1.5vw 1.5vw rgb(255, 30, 0);
   color: black;
 }
 

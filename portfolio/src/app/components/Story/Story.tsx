@@ -6,47 +6,53 @@ export default function Story() {
   const { scrollYProgress } = useScroll();
 
   // Create transform animations for each paragraph
-  const y1 = useTransform(scrollYProgress, [0.76, 0.87], ["80%", "0%"]);
-  const y2 = useTransform(scrollYProgress, [0.78, 0.87], ["100%", "0%"]);
-  const y3 = useTransform(scrollYProgress, [0.8, 0.87], ["120%", "0%"]);
-  const y4 = useTransform(scrollYProgress, [0.82, 0.87], ["200%", "0%"]);
-  const y5 = useTransform(scrollYProgress, [0.84, 0.87], ["250%", "0%"]);
-  const y6 = useTransform(scrollYProgress, [0.86, 0.87], ["300%", "0%"]);
+  const y1 = useTransform(scrollYProgress, [0.78, 0.875], ["110%", "0%"]);
+  const y2 = useTransform(scrollYProgress, [0.78, 0.875], ["110%", "0%"]);
+  const y3 = useTransform(scrollYProgress, [0.8, 0.875], ["120%", "0%"]);
+  const y4 = useTransform(scrollYProgress, [0.82, 0.875], ["200%", "0%"]);
+  const y5 = useTransform(scrollYProgress, [0.84, 0.875], ["250%", "0%"]);
+  const y6 = useTransform(scrollYProgress, [0.86, 0.875], ["300%", "0%"]);
 
   // Create transform animations for lineHeight to spread the lines
   const lineHeight1 = useTransform(
     scrollYProgress,
-    [0.76, 0.87],
+    [0.76, 0.875],
     ["10vh", "3.1vh"]
   );
   const lineHeight2 = useTransform(
     scrollYProgress,
-    [0.78, 0.87],
+    [0.78, 0.875],
     ["8vh", "3.1vh"]
   );
   const lineHeight3 = useTransform(
     scrollYProgress,
-    [0.8, 0.87],
+    [0.8, 0.875],
     ["6vh", "3.1vh"]
   );
   const lineHeight4 = useTransform(
     scrollYProgress,
-    [0.82, 0.87],
+    [0.82, 0.875],
     ["5vh", "3.1vh"]
   );
   const lineHeight5 = useTransform(
     scrollYProgress,
-    [0.84, 0.87],
+    [0.84, 0.875],
     ["4vh", "3.1vh"]
   );
   const lineHeight6 = useTransform(
     scrollYProgress,
-    [0.86, 0.87],
+    [0.86, 0.875],
     ["4vh", "3.1vh"]
   );
 
+  const letterSpacing = useTransform(
+    scrollYProgress,
+    [0.76, 0.875],
+    ["2em", "0em"]
+  );
+
   // Title animation
-  const titleY = useTransform(scrollYProgress, [0.76, 0.87], ["15%", "0%"]);
+  const titleY = useTransform(scrollYProgress, [0.73, 0.89], ["10%", "0%"]);
   const springY = useSpring(titleY, {
     stiffness: 300,
     damping: 20,
@@ -56,7 +62,10 @@ export default function Story() {
   return (
     <>
       <section className={styles.container}>
-        <motion.div style={{ y: springY }} className={styles.titleContainer}>
+        <motion.div
+          style={{ y: springY, letterSpacing: letterSpacing }}
+          className={styles.titleContainer}
+        >
           <p>a bit about me</p>
         </motion.div>
 

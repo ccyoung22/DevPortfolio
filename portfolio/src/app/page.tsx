@@ -36,9 +36,7 @@ export default function Home() {
       <section className={styles.storyContainer}>
         <Story />
       </section>
-      <section className={styles.contactContainer}>
-        <Contact />
-      </section>
+      <Contact />
     </main>
   );
 }
