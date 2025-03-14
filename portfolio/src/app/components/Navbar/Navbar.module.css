@@ -1,5 +1,4 @@
 .container {
-  color: rgb(255, 30, 0);
   height: 6vh;
   display: flex;
   justify-content: space-between;
@@ -8,8 +7,21 @@
   position: fixed;
   z-index: 1000;
   width: 100vw;
+}
+
+.navButton {
+  color: rgb(255, 30, 0);
+  border: none;
   font-family: "NohemiBlack";
   font-size: 2.8vh;
+  background-color: transparent;
+  padding: 0.5vh;
+  border-radius: 2vh;
+}
+
+.navButton:hover {
+  color: black;
+  transition: transform 0.2s ease-in-out; /* Smooth animation */
 }
 
 @media (max-width: 932px) {

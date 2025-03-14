@@ -23,20 +23,24 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <Navbar />
-      <section className={styles.heroContainer}>
+      <section id="hero" className={styles.heroContainer}>
         <Hero />
       </section>
-      <section className={styles.aboutContainer}>
+      <section id="about" className={styles.aboutContainer}>
         <About />
       </section>
-      <Projects />
-      <section className={styles.skillsContainer}>
+      <section id="projects">
+        <Projects />
+      </section>
+      <section id="skills" className={styles.skillsContainer}>
         <Skills />
       </section>
-      <section className={styles.storyContainer}>
+      <section id="story" className={styles.storyContainer}>
         <Story />
       </section>
-      <Contact />
+      <section id="contact">
+        <Contact />
+      </section>
     </main>
   );
 }
