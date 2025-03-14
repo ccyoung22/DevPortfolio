@@ -1,6 +1,5 @@
-"use client";
 import { useScroll, useTransform, motion, useSpring } from "framer-motion";
-import { useRef } from "react";
+import { useRef, useState, useEffect } from "react";
 import styles from "./Story.module.css";
 
 export default function Story() {
@@ -9,6 +8,22 @@ export default function Story() {
     target: titleRef,
     offset: ["start 0.95", "start 0.15"],
   });
+
+  const [isMobile, setIsMobile] = useState(false);
+
+  // Detect screen size and update the isMobile state
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 600); // You can adjust this breakpoint as needed
+    };
+
+    window.addEventListener("resize", handleResize);
+    handleResize(); // Initial check
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   const y1 = useTransform(scrollYProgress, [0, 1], ["110%", "0%"]);
   const y2 = useTransform(scrollYProgress, [0, 1], ["110%", "0%"]);
@@ -37,7 +52,10 @@ export default function Story() {
     <>
       <section ref={titleRef} className={styles.container}>
         <motion.div
-          style={{ y: springY, letterSpacing: letterSpacing }}
+          style={{
+            y: isMobile ? 0 : springY, // Disable scroll animation on mobile
+            letterSpacing: isMobile ? 0 : letterSpacing, // Disable letter-spacing animation on mobile
+          }}
           className={styles.titleContainer}
         >
           <p>a bit about me</p>
@@ -48,7 +66,9 @@ export default function Story() {
 
           <div className={styles.textHalf}>
             <div className={styles.textSection}>
-              <motion.p style={{ y: y1, lineHeight: lineHeight1 }}>
+              <motion.p
+                style={{ y: isMobile ? 0 : y1, lineHeight: lineHeight1 }}
+              >
                 Hi, {`I'm`} Caitlin! {`I’ve`} always loved making stuff. As a
                 kid, the staff at my after-school club joked they had to stay
                 late whenever I was in. {`I’d`} be busy drawing, painting, or
@@ -56,7 +76,9 @@ export default function Story() {
               </motion.p>
             </div>
             <div className={styles.textSection}>
-              <motion.p style={{ y: y2, lineHeight: lineHeight2 }}>
+              <motion.p
+                style={{ y: isMobile ? 0 : y2, lineHeight: lineHeight2 }}
+              >
                 Not much changed as I got older. I studied Illustration at
                 university, followed by a {`Master's`} in Animation at the Royal
                 College of Art. During my studies, I started selling vintage
@@ -65,7 +87,9 @@ export default function Story() {
               </motion.p>
             </div>
             <div className={styles.textSection}>
-              <motion.p style={{ y: y3, lineHeight: lineHeight3 }}>
+              <motion.p
+                style={{ y: isMobile ? 0 : y3, lineHeight: lineHeight3 }}
+              >
                 What started as a side hustle became my full-time job after
                 graduation. I got to travel the world sourcing vintage, opened a
                 London shop, and at one point managed a small team. Navigating
@@ -78,7 +102,9 @@ export default function Story() {
 
           <div className={styles.textHalf}>
             <div className={styles.textSection}>
-              <motion.p style={{ y: y4, lineHeight: lineHeight4 }}>
+              <motion.p
+                style={{ y: isMobile ? 0 : y4, lineHeight: lineHeight4 }}
+              >
                 {`I’d`} always seen myself as more creative than technical, but
                 last year I worked closely with a web developer and was
                 captivated by {`coding's`} creative aspects. I started learning
@@ -86,7 +112,9 @@ export default function Story() {
               </motion.p>
             </div>
             <div className={styles.textSection}>
-              <motion.p style={{ y: y5, lineHeight: lineHeight5 }}>
+              <motion.p
+                style={{ y: isMobile ? 0 : y5, lineHeight: lineHeight5 }}
+              >
                 Luckily, I managed to earn a place at School of Code, a 16-week
                 programme focused on both technical and problem-solving skills.{" "}
                 {`It’s `} been a life-changing experience. {`I’ve `} explored
@@ -95,7 +123,9 @@ export default function Story() {
               </motion.p>
             </div>
             <div className={styles.textSection}>
-              <motion.p style={{ y: y6, lineHeight: lineHeight6 }}>
+              <motion.p
+                style={{ y: isMobile ? 0 : y6, lineHeight: lineHeight6 }}
+              >
                 Far from being a weakness, {`I’ve `} found my creativity has
                 been one of my biggest strengths in tech. Now, {`I'm `} excited
                 to keep learning, building, and finding my place in the

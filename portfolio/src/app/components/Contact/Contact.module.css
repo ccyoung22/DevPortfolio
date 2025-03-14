@@ -89,11 +89,20 @@
 }
 
 @media screen and (max-width: 600px) {
-  /* .container {
+  .container {
+    height: 750px;
+    background-color: rgb(255, 30, 0);
   }
 
   .stickyFooter {
-  } */
+    height: 750px;
+    background-color: rgb(255, 30, 0);
+  }
+
+  .contentContainer {
+    height: 750px;
+    background-color: rgb(255, 30, 0);
+  }
 
   .titleText {
     font-size: 18vw; /* Reduce font size for smaller screens */
