@@ -6,10 +6,10 @@ export default function Contact() {
     <section className={styles.container}>
       <div className={styles.stickyFooter}>
         <div className={styles.contentContainer}>
-          <p className={styles.titleText}>
-            {`i'd`} love <br />
-            to chat
-          </p>
+          <div className={styles.titleText}>
+            <p className={styles.titleTop}>{`i'd`} love</p>
+            <p>to chat</p>
+          </div>
           <div className={styles.descriptionContainer}>
             <p className={styles.description}>
               BASED &#9734; IN THE UK

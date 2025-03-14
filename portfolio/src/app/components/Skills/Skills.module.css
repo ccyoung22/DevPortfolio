@@ -58,6 +58,7 @@
   .container {
     justify-content: flex-start;
     height: 100vh;
+    margin-bottom: 20vh;
   }
   .skillItem {
     width: 30vw;
@@ -87,7 +88,8 @@
 @media (min-width: 769px) and (max-width: 1024px) {
   .container {
     justify-content: flex-start;
-    height: 100vh;
+    margin-top: 10vh;
+    height: 70vh;
   }
 
   .skillItem {

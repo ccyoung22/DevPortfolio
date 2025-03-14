@@ -26,17 +26,23 @@
 .titleText {
   font-family: "NohemiBlack";
   font-size: 18vw;
-  line-height: 18vh;
+  line-height: 12vw;
   grid-row: 3/ 5;
   grid-column: 1/4;
   display: flex;
-  align-items: flex-end;
-  justify-content: flex-start;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-left: 1vw;
+}
+
+.titleTop {
+  margin-bottom: 3.5vh;
+  font-size: 17vw;
 }
 
 .description {
   font-family: "NohemiLight";
-  font-size: 2vh;
+  font-size: 2.5vh;
   text-align: right;
 }
 
@@ -64,7 +70,7 @@
   justify-content: flex-start;
   flex-direction: column;
   font-family: "NohemiRegular";
-  font-size: 2vh;
+  font-size: 1.8vh;
   line-height: 120%;
 }
 
@@ -80,4 +86,94 @@
 
 .icon {
   margin-right: 1.5vw;
+}
+
+@media screen and (max-width: 600px) {
+  /* .container {
+  }
+
+  .stickyFooter {
+  } */
+
+  .titleText {
+    font-size: 18vw; /* Reduce font size for smaller screens */
+    line-height: 10vw; /* Adjust line-height */
+    margin-bottom: 1vh;
+    margin-left: 2vw;
+  }
+
+  .titleTop {
+    font-size: 17vw; /* Adjust title font size */
+    margin-bottom: 3vh;
+  }
+
+  .description {
+    font-size: 1vh; /* Adjust description font size */
+  }
+
+  .contactText {
+    font-size: 1.8vh; /* Adjust font size for smaller screens */
+    padding: 0 10vh;
+    margin-bottom: 5vh;
+    grid-row: 3;
+    padding: 12vh 6vh 8vh 8vh;
+    grid-column: 2/5;
+  }
+
+  .contactDetails {
+    display: flex;
+    font-size: 1.5vh;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .descriptionContainer {
+    margin-right: 1vw;
+  }
+
+  .bioText {
+    padding-bottom: 2vh;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  .titleText {
+    font-size: 18vw; /* Reduce font size for smaller screens */
+    line-height: 10vw; /* Adjust line-height */
+    margin-bottom: 1vh;
+    margin-left: 2vw;
+  }
+
+  .titleTop {
+    font-size: 17vw; /* Adjust title font size */
+    margin-bottom: 3vh;
+  }
+
+  .description {
+    font-size: 1vh; /* Adjust description font size */
+  }
+
+  .contactText {
+    font-size: 1.8vh; /* Adjust font size for smaller screens */
+    padding: 0 10vh;
+    margin-bottom: 5vh;
+    grid-row: 3;
+    padding: 12vh 8vh 24vh 18vh;
+    grid-column: 2/5;
+  }
+
+  .contactDetails {
+    display: flex;
+    font-size: 1.5vh;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .descriptionContainer {
+    margin-right: 1vw;
+  }
+
+  .bioText {
+    padding-bottom: 2vh;
+  }
 }

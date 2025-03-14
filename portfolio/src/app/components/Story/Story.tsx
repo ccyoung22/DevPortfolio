@@ -1,58 +1,32 @@
 "use client";
 import { useScroll, useTransform, motion, useSpring } from "framer-motion";
+import { useRef } from "react";
 import styles from "./Story.module.css";
 
 export default function Story() {
-  const { scrollYProgress } = useScroll();
+  const titleRef = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: titleRef,
+    offset: ["start 0.95", "start 0.15"],
+  });
 
-  // Create transform animations for each paragraph
-  const y1 = useTransform(scrollYProgress, [0.78, 0.855], ["110%", "0%"]);
-  const y2 = useTransform(scrollYProgress, [0.78, 0.855], ["110%", "0%"]);
-  const y3 = useTransform(scrollYProgress, [0.8, 0.855], ["120%", "0%"]);
-  const y4 = useTransform(scrollYProgress, [0.82, 0.855], ["200%", "0%"]);
-  const y5 = useTransform(scrollYProgress, [0.84, 0.855], ["250%", "0%"]);
-  const y6 = useTransform(scrollYProgress, [0.855, 0.855], ["300%", "0%"]);
+  const y1 = useTransform(scrollYProgress, [0, 1], ["110%", "0%"]);
+  const y2 = useTransform(scrollYProgress, [0, 1], ["110%", "0%"]);
+  const y3 = useTransform(scrollYProgress, [0, 1], ["120%", "0%"]);
+  const y4 = useTransform(scrollYProgress, [0, 1], ["200%", "0%"]);
+  const y5 = useTransform(scrollYProgress, [0, 1], ["250%", "0%"]);
+  const y6 = useTransform(scrollYProgress, [0, 1], ["300%", "0%"]);
 
-  // Create transform animations for lineHeight to spread the lines
-  const lineHeight1 = useTransform(
-    scrollYProgress,
-    [0.76, 0.855],
-    ["10vh", "3.1vh"]
-  );
-  const lineHeight2 = useTransform(
-    scrollYProgress,
-    [0.78, 0.855],
-    ["8vh", "3.1vh"]
-  );
-  const lineHeight3 = useTransform(
-    scrollYProgress,
-    [0.8, 0.855],
-    ["6vh", "3.1vh"]
-  );
-  const lineHeight4 = useTransform(
-    scrollYProgress,
-    [0.82, 0.855],
-    ["5vh", "3.1vh"]
-  );
-  const lineHeight5 = useTransform(
-    scrollYProgress,
-    [0.84, 0.855],
-    ["4vh", "3.1vh"]
-  );
-  const lineHeight6 = useTransform(
-    scrollYProgress,
-    [0.855, 0.855],
-    ["4vh", "3.1vh"]
-  );
+  const lineHeight1 = useTransform(scrollYProgress, [0, 1], ["10vh", "2.8vh"]);
+  const lineHeight2 = useTransform(scrollYProgress, [0, 1], ["8vh", "2.8vh"]);
+  const lineHeight3 = useTransform(scrollYProgress, [0, 1], ["6vh", "2.8vh"]);
+  const lineHeight4 = useTransform(scrollYProgress, [0, 1], ["5vh", "2.8vh"]);
+  const lineHeight5 = useTransform(scrollYProgress, [0, 1], ["4vh", "2.8vh"]);
+  const lineHeight6 = useTransform(scrollYProgress, [0, 1], ["4vh", "2.8vh"]);
 
-  const letterSpacing = useTransform(
-    scrollYProgress,
-    [0.76, 0.855],
-    ["2em", "0em"]
-  );
+  const letterSpacing = useTransform(scrollYProgress, [0, 1], ["2em", "0em"]);
 
-  // Title animation
-  const titleY = useTransform(scrollYProgress, [0.73, 0.89], ["10%", "0%"]);
+  const titleY = useTransform(scrollYProgress, [0, 1], ["10%", "0%"]);
   const springY = useSpring(titleY, {
     stiffness: 300,
     damping: 20,
@@ -61,7 +35,7 @@ export default function Story() {
 
   return (
     <>
-      <section className={styles.container}>
+      <section ref={titleRef} className={styles.container}>
         <motion.div
           style={{ y: springY, letterSpacing: letterSpacing }}
           className={styles.titleContainer}
@@ -83,24 +57,21 @@ export default function Story() {
             </div>
             <div className={styles.textSection}>
               <motion.p style={{ y: y2, lineHeight: lineHeight2 }}>
-                Not much changed as I got older. I applied my passion for
-                drawing to an illustration degree, followed by an animation{" "}
-                {`Master's`} at the Royal College of Art. While studying, I
-                started a side hustle selling vintage clothing to support
-                myself.
-                {` I’d`} cycle to the local car boot with a camping rucksack
-                twice a week, load up on vintage finds, and spend the week
-                photographing and selling them.
+                Not much changed as I got older. I studied Illustration at
+                university, followed by a {`Master's`} in Animation at the Royal
+                College of Art. During my studies, I started selling vintage
+                clothing—cycling to car boot sales with a camping rucksack,
+                collecting finds, then photographing and selling them online.
               </motion.p>
             </div>
             <div className={styles.textSection}>
               <motion.p style={{ y: y3, lineHeight: lineHeight3 }}>
-                What started as a side hustle became my full-time job after my{" "}
-                {`Master's`}. I got to travel the world sourcing vintage, opened
-                a London shop, and at one point managed a small team. Running
-                the business through six challenging years — COVID, Brexit, the
-                cost of living crisis — taught me resilience, but after a while,
-                I felt ready for a new adventure.
+                What started as a side hustle became my full-time job after
+                graduation. I got to travel the world sourcing vintage, opened a
+                London shop, and at one point managed a small team. Navigating
+                six challenging years through COVID, Brexit, and the cost of
+                living crisis taught me resilience, but eventually, I craved a
+                new direction.
               </motion.p>
             </div>
           </div>
@@ -108,18 +79,15 @@ export default function Story() {
           <div className={styles.textHalf}>
             <div className={styles.textSection}>
               <motion.p style={{ y: y4, lineHeight: lineHeight4 }}>
-                {`I’d`} always seen myself as more creative than technical, so
-                coding {`wasn’t `} something I thought {` I’d `} be good at. But
-                early last year, I got the opportunity to work closely with a
-                web developer on a project and was fascinated by how creative
-                the process was. Curious, I started learning HTML and CSS and
-                loved it. I knew {`I’d `} found my next step.
+                {`I’d`} always seen myself as more creative than technical, but
+                last year I worked closely with a web developer and was
+                captivated by {`coding's`} creative aspects. I started learning
+                HTML and CSS and immediately knew {`I'd`} found my next step.
               </motion.p>
             </div>
             <div className={styles.textSection}>
               <motion.p style={{ y: y5, lineHeight: lineHeight5 }}>
-                I was lucky enough to be one of 40 people selected out of 2000
-                applicants to join the School of Code bootcamp, a 16-week
+                Luckily, I managed to earn a place at School of Code, a 16-week
                 programme focused on both technical and problem-solving skills.{" "}
                 {`It’s `} been a life-changing experience. {`I’ve `} explored
                 new technologies, collaborated with amazing people, and realised
@@ -131,7 +99,7 @@ export default function Story() {
                 Far from being a weakness, {`I’ve `} found my creativity has
                 been one of my biggest strengths in tech. Now, {`I'm `} excited
                 to keep learning, building, and finding my place in the
-                industry. I {`can’t `} wait to see where this new path takes me!
+                industry. I {`can’t `} wait to see where this new path takes me.
               </motion.p>
             </div>
           </div>
