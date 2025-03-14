@@ -67,7 +67,10 @@ export default function Story() {
           <div className={styles.textHalf}>
             <div className={styles.textSection}>
               <motion.p
-                style={{ y: isMobile ? 0 : y1, lineHeight: lineHeight1 }}
+                style={{
+                  y: isMobile ? 0 : y1,
+                  lineHeight: isMobile ? "2.5vh" : lineHeight1,
+                }}
               >
                 Hi, {`I'm`} Caitlin! {`I’ve`} always loved making stuff. As a
                 kid, the staff at my after-school club joked they had to stay
@@ -77,7 +80,10 @@ export default function Story() {
             </div>
             <div className={styles.textSection}>
               <motion.p
-                style={{ y: isMobile ? 0 : y2, lineHeight: lineHeight2 }}
+                style={{
+                  y: isMobile ? 0 : y2,
+                  lineHeight: isMobile ? "2.5vh" : lineHeight2,
+                }}
               >
                 Not much changed as I got older. I studied Illustration at
                 university, followed by a {`Master's`} in Animation at the Royal
@@ -88,7 +94,10 @@ export default function Story() {
             </div>
             <div className={styles.textSection}>
               <motion.p
-                style={{ y: isMobile ? 0 : y3, lineHeight: lineHeight3 }}
+                style={{
+                  y: isMobile ? 0 : y3,
+                  lineHeight: isMobile ? "2.5vh" : lineHeight3,
+                }}
               >
                 What started as a side hustle became my full-time job after
                 graduation. I got to travel the world sourcing vintage, opened a
@@ -103,7 +112,10 @@ export default function Story() {
           <div className={styles.textHalf}>
             <div className={styles.textSection}>
               <motion.p
-                style={{ y: isMobile ? 0 : y4, lineHeight: lineHeight4 }}
+                style={{
+                  y: isMobile ? 0 : y4,
+                  lineHeight: isMobile ? "2.5vh" : lineHeight4,
+                }}
               >
                 {`I’d`} always seen myself as more creative than technical, but
                 last year I worked closely with a web developer and was
@@ -113,7 +125,10 @@ export default function Story() {
             </div>
             <div className={styles.textSection}>
               <motion.p
-                style={{ y: isMobile ? 0 : y5, lineHeight: lineHeight5 }}
+                style={{
+                  y: isMobile ? 0 : y5,
+                  lineHeight: isMobile ? "2.5vh" : lineHeight5,
+                }}
               >
                 Luckily, I managed to earn a place at School of Code, a 16-week
                 programme focused on both technical and problem-solving skills.{" "}
@@ -124,7 +139,10 @@ export default function Story() {
             </div>
             <div className={styles.textSection}>
               <motion.p
-                style={{ y: isMobile ? 0 : y6, lineHeight: lineHeight6 }}
+                style={{
+                  y: isMobile ? 0 : y6,
+                  lineHeight: isMobile ? "2.5vh" : lineHeight6,
+                }}
               >
                 Far from being a weakness, {`I’ve `} found my creativity has
                 been one of my biggest strengths in tech. Now, {`I'm `} excited
