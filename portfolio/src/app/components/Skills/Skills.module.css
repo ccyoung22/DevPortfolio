@@ -58,7 +58,7 @@
   .container {
     justify-content: flex-start;
     height: 100vh;
-    margin-bottom: 20vh;
+    margin-top: 10vh;
   }
   .skillItem {
     width: 30vw;
