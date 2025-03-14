@@ -23,15 +23,15 @@ export default function Navbar() {
         </button>
         <button
           className={styles.navButton}
-          onClick={() => handleNavigation("about")}
-        >
-          about
-        </button>
-        <button
-          className={styles.navButton}
           onClick={() => handleNavigation("projects")}
         >
           projects
+        </button>
+        <button
+          className={styles.navButton}
+          onClick={() => handleNavigation("about")}
+        >
+          about
         </button>
         <button
           className={styles.navButton}

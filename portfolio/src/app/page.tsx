@@ -26,7 +26,7 @@ export default function Home() {
       <section id="hero" className={styles.heroContainer}>
         <Hero />
       </section>
-      <section id="about" className={styles.aboutContainer}>
+      <section className={styles.aboutContainer}>
         <About />
       </section>
       <section id="projects">
@@ -35,7 +35,7 @@ export default function Home() {
       <section id="skills" className={styles.skillsContainer}>
         <Skills />
       </section>
-      <section id="story" className={styles.storyContainer}>
+      <section id="about" className={styles.storyContainer}>
         <Story />
       </section>
       <section id="contact">
