@@ -120,14 +120,16 @@
   .descriptionLinksContainer {
     width: 100%;
     font-size: 4vw;
+    font-family: "Nohemi-Light";
   }
 
   .titleContainer {
     font-size: 1.2vh;
+    font-family: "NohemiRegular";
   }
 
   .projectText {
-    font-family: "NohemiRegular";
+    font-family: "NohemiThin";
   }
 
   .imageContainer {
@@ -170,15 +172,17 @@
 
   .descriptionLinksContainer {
     width: 100%;
-    font-size: 3vw; /* Slightly smaller for better readability */
+    font-size: 3vw;
+    font-family: "Nohemi-Light";
   }
 
   .titleContainer {
     font-size: 1.5vh;
+    font-family: "NohemiRegular";
   }
 
   .projectText {
-    font-family: "NohemiRegular";
+    font-family: "NohemiThin";
   }
 
   .imageContainer {
