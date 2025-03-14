@@ -8,7 +8,9 @@ import Contact from "./components/Contact/Contact";
 import Navbar from "./components/Navbar/Navbar";
 import Projects from "./components/Projects/Projects";
 import Skills from "./components/Skills/Skills";
-import Story from "./components/Story/Story";
+// import Story from "./components/Story/Story";
+import Story2 from "./components/Story2/Story";
+// import Practice from "./components/Practice/Practice";
 
 export default function Home() {
   useEffect(() => {
@@ -34,7 +36,7 @@ export default function Home() {
         <Skills />
       </section>
       <section className={styles.storyContainer}>
-        <Story />
+        <Story2 />
       </section>
       <Contact />
     </main>

@@ -6,48 +6,48 @@ export default function Story() {
   const { scrollYProgress } = useScroll();
 
   // Create transform animations for each paragraph
-  const y1 = useTransform(scrollYProgress, [0.78, 0.875], ["110%", "0%"]);
-  const y2 = useTransform(scrollYProgress, [0.78, 0.875], ["110%", "0%"]);
-  const y3 = useTransform(scrollYProgress, [0.8, 0.875], ["120%", "0%"]);
-  const y4 = useTransform(scrollYProgress, [0.82, 0.875], ["200%", "0%"]);
-  const y5 = useTransform(scrollYProgress, [0.84, 0.875], ["250%", "0%"]);
-  const y6 = useTransform(scrollYProgress, [0.86, 0.875], ["300%", "0%"]);
+  const y1 = useTransform(scrollYProgress, [0.78, 0.855], ["110%", "0%"]);
+  const y2 = useTransform(scrollYProgress, [0.78, 0.855], ["110%", "0%"]);
+  const y3 = useTransform(scrollYProgress, [0.8, 0.855], ["120%", "0%"]);
+  const y4 = useTransform(scrollYProgress, [0.82, 0.855], ["200%", "0%"]);
+  const y5 = useTransform(scrollYProgress, [0.84, 0.855], ["250%", "0%"]);
+  const y6 = useTransform(scrollYProgress, [0.855, 0.855], ["300%", "0%"]);
 
   // Create transform animations for lineHeight to spread the lines
   const lineHeight1 = useTransform(
     scrollYProgress,
-    [0.76, 0.875],
+    [0.76, 0.855],
     ["10vh", "3.1vh"]
   );
   const lineHeight2 = useTransform(
     scrollYProgress,
-    [0.78, 0.875],
+    [0.78, 0.855],
     ["8vh", "3.1vh"]
   );
   const lineHeight3 = useTransform(
     scrollYProgress,
-    [0.8, 0.875],
+    [0.8, 0.855],
     ["6vh", "3.1vh"]
   );
   const lineHeight4 = useTransform(
     scrollYProgress,
-    [0.82, 0.875],
+    [0.82, 0.855],
     ["5vh", "3.1vh"]
   );
   const lineHeight5 = useTransform(
     scrollYProgress,
-    [0.84, 0.875],
+    [0.84, 0.855],
     ["4vh", "3.1vh"]
   );
   const lineHeight6 = useTransform(
     scrollYProgress,
-    [0.86, 0.875],
+    [0.855, 0.855],
     ["4vh", "3.1vh"]
   );
 
   const letterSpacing = useTransform(
     scrollYProgress,
-    [0.76, 0.875],
+    [0.76, 0.855],
     ["2em", "0em"]
   );
 
@@ -72,7 +72,6 @@ export default function Story() {
         <div className={styles.textContainer}>
           <br />
 
-          {/* First half of the text */}
           <div className={styles.textHalf}>
             <div className={styles.textSection}>
               <motion.p style={{ y: y1, lineHeight: lineHeight1 }}>
@@ -106,7 +105,6 @@ export default function Story() {
             </div>
           </div>
 
-          {/* Second half of the text */}
           <div className={styles.textHalf}>
             <div className={styles.textSection}>
               <motion.p style={{ y: y4, lineHeight: lineHeight4 }}>
