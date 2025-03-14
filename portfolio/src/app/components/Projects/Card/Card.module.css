@@ -75,7 +75,7 @@
   width: 30%;
   flex-direction: column;
   margin-right: 2vw;
-  font-family: "Nohemi-Light";
+  font-family: "NohemiLight";
   font-size: 2.1vh;
   padding: 0px 1vw 0px 1vw;
 }
@@ -120,7 +120,7 @@
   .descriptionLinksContainer {
     width: 100%;
     font-size: 4vw;
-    font-family: "Nohemi-Light";
+    font-family: "NohemiLight";
   }
 
   .titleContainer {
@@ -173,7 +173,7 @@
   .descriptionLinksContainer {
     width: 100%;
     font-size: 3vw;
-    font-family: "Nohemi-Light";
+    font-family: "NohemiLight";
   }
 
   .titleContainer {
