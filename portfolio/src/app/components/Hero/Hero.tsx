@@ -1,35 +1,29 @@
 "use client";
-import { motion } from "framer-motion";
-import { useState, useEffect } from "react";
+import { motion, useScroll, useTransform } from "framer-motion";
+import { useRef } from "react";
 import styles from "./Hero.module.css";
 
 export default function Hero() {
-  const [scrollY, setScrollY] = useState(0);
+  const sectionRef = useRef(null);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrollY(window.scrollY);
-    };
+  // Use a single scroll progress for the entire section
+  const { scrollYProgress } = useScroll({
+    target: sectionRef,
+    offset: ["start start", "end start"],
+  });
 
-    window.addEventListener("scroll", handleScroll);
+  // Create dramatically different transform values for title and description
+  // Title moves much faster and further than description
+  const titleY = useTransform(scrollYProgress, [0, 1], [0, -400]);
+  const descriptionY = useTransform(scrollYProgress, [0, 1], [0, -800]);
 
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
   return (
     <>
-      <section className={styles.container}>
+      <section ref={sectionRef} className={styles.container}>
         <motion.div
           className={styles.titleWrapper}
-          animate={{
-            y: -scrollY * 0.3,
-          }}
-          transition={{
-            type: "spring",
-            stiffness: 80,
-            damping: 15,
-          }}
+          style={{ y: titleY }}
+          initial={{ y: 0 }}
         >
           <h1 className={styles.title}>
             hi i&apos;m <span className={styles.caitlin}>Caitlin</span>
@@ -37,14 +31,8 @@ export default function Hero() {
         </motion.div>
         <motion.div
           className={styles.descriptionWrapper}
-          animate={{
-            y: -scrollY * 0.7,
-          }}
-          transition={{
-            type: "spring",
-            stiffness: 80,
-            damping: 25,
-          }}
+          style={{ y: descriptionY }}
+          initial={{ y: 0 }}
         >
           <p className={styles.description}>
             FULL STACK ⛭ WEB DEVELOPER <br />
