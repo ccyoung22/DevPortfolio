@@ -1,7 +1,7 @@
 .container {
   position: relative;
   margin-top: 5vh;
-  margin-bottom: 10vh; /* Changed to relative so that sticky can work within this context */
+  margin-bottom: 10vh;
 }
 
 .projectTitle {
