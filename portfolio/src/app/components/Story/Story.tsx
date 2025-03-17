@@ -88,7 +88,7 @@ export default function Story() {
                 Not much changed as I got older. I studied Illustration at
                 university, followed by a {`Master's`} in Animation at the Royal
                 College of Art. During my studies, I started selling vintage
-                clothing—cycling to car boot sales with a camping rucksack,
+                clothing - cycling to car boot sales with a camping rucksack,
                 collecting finds, then photographing and selling them online.
               </motion.p>
             </div>
@@ -144,10 +144,10 @@ export default function Story() {
                   lineHeight: isMobile ? "2.5vh" : lineHeight6,
                 }}
               >
-                Far from being a weakness, {`I’ve `} found my creativity has
-                been one of my biggest strengths in tech. Now, {`I'm `} excited
-                to keep learning, building, and finding my place in the
-                industry. I {`can’t `} wait to see where this new path takes me.
+                {`I’ve `} found my creativity has been one of my biggest
+                strengths in tech. Now, {`I'm `} excited to keep learning,
+                building, and finding my place in the industry. I {`can’t `}{" "}
+                wait to see where this new path takes me.
               </motion.p>
             </div>
           </div>

@@ -14,14 +14,14 @@ export default function Contact() {
             <p className={styles.description}>
               BASED &#9734; IN THE UK
               <br />
-              <span className={styles.portText}>PORTFOLIO © 202</span>5 &#9825;
+              <span className={styles.portText}>PORTFOLIO © 2025 &#9825;</span>
             </p>
           </div>
           <div className={styles.contactText}>
             <p className={styles.bioText}>
-              {`I’m`} actively looking for new opportunities. If {`you’re`} in
-              the market for a developer or designer, {`I’d`} love to hear from
-              you{" "}
+              {`I’m`} actively looking for new opportunities. <br />
+              If {`you’re`} in the market for a developer or designer, {`I’d`}{" "}
+              love to hear from you{" "}
             </p>
             <div className={styles.contactDetails}>
               <a

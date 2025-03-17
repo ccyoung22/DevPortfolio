@@ -47,10 +47,10 @@ export default function Hero() {
           }}
         >
           <p className={styles.description}>
-            FRONT END &#9965; WEB DEVELOPER <br />
-            BASED &#9734; IN THE UK ;
+            FULL STACK ⛭ WEB DEVELOPER <br />
+            FRONT END ☆ OBSESSED
             <br />
-            <span className={styles.portText}>PORTFOLIO © 202</span>5 &#9825;
+            <span className={styles.portText}>PORTFOLIO © 2025 &#9825;</span>
           </p>
         </motion.div>
       </section>

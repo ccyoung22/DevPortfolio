@@ -20,7 +20,7 @@ export const projects: Project[] = [
   {
     title: "State Of It",
     description:
-      "An interactive guide to understanding useState in React, created by me in two days as part of a bootcamp brief to develop an educational resource.",
+      "An interactive guide to understanding useState in React, that I created in two days as part of a bootcamp brief to develop an educational resource.",
     src: "StateOfIt.png",
     link: "https://state-of-it.vercel.app/",
     github: "https://github.com/ccyoung22/StateOfIt",
