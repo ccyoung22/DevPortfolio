@@ -34,6 +34,6 @@ www.caitlin-young.co.uk
 
 ## 📧 Contact
 Feel free to reach out if you'd like to connect or collaborate!
-- **LinkedIn:** [Your Profile Link Here]
-- **Email:** [Your Email Here]
+- **LinkedIn:** (https://www.linkedin.com/in/caitlin-young-4544a5226/)
+- **Email:** caitlincnyoung@gmail.com
 
