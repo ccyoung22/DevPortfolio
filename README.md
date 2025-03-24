@@ -20,11 +20,9 @@ www.caitlin-young.co.uk
 - **Animations:** Framer Motion animations for interactive effects
 - **Utils:** Helper functions for improved functionality
 
-## 🛠️ Installation
+## Installation
 1. Clone the repo:
-   ```bash
-   git clone https://github.com/yourusername/portfolio.git
-   ```
+
 2. Install dependencies:
    ```bash
    npm install
