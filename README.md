@@ -15,10 +15,9 @@ After years of working in creative industries, I transitioned into tech through 
 www.caitlin-young.co.uk
 
 - **Components:** Reusable UI elements
-- **Pages:** Next.js routing structure
-- **Styles:** CSS for layout and design
+- **Styles:** Modular CSS for layout and design
 - **Animations:** Framer Motion animations for interactive effects
-- **Utils:** Helper functions for improved functionality
+
 
 ## Installation
 1. Clone the repo:
