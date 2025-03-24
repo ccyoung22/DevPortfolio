@@ -19,7 +19,7 @@ export default function Navbar() {
           className={styles.navButton}
           onClick={() => handleNavigation("hero")}
         >
-          index
+          home
         </button>
         <button
           className={styles.navButton}

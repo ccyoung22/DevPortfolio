@@ -26,9 +26,11 @@
 .title {
   font-size: 14vw;
   margin: 0;
+  margin-bottom: 1.3vh;
+  margin-left: 1.2vw;
   padding: 0;
   font-family: "NohemiBlack";
-  line-height: 14.5vh;
+  line-height: 17vh;
   margin-bottom: 0.3vh;
 }
 
@@ -43,7 +45,8 @@
 
 .description {
   font-family: "NohemiLight";
-  font-size: 2vh;
+  font-size: 2.5vh;
+  margin-right: 1vh;
   text-align: right;
 }
 
