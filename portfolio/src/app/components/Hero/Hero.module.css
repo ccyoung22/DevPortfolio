@@ -60,20 +60,26 @@
 
 @media (max-width: 1024px) {
   .container {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     padding: 8px 8px 0 8px;
+    height: 100vh;
   }
 
   .titleWrapper {
-    grid-column: 1;
+    grid-column: 1 / span 3;
     grid-row: 2;
   }
 
+  .caitlin {
+    width: 250px;
+  }
+
   .descriptionWrapper {
-    grid-column: 1;
-    grid-row: 2;
-    align-self: center;
+    grid-column: 2 / span 3;
+    grid-row: 3;
+    align-self: end;
+    margin-bottom: 1vh;
   }
 
   .title {

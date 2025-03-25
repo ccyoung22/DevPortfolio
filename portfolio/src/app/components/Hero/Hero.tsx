@@ -9,7 +9,7 @@ export default function Hero() {
   const words = ["curious", "collaborative", "creative", "Caitlin."];
 
   useEffect(() => {
-    const intervalDuration = wordIndex === 3 ? 1000 : 500; // 'it.' stays for 1 second, others 0.5 seconds
+    const intervalDuration = wordIndex === 3 ? 1000 : 500;
     const interval = setInterval(() => {
       setWordIndex((prevIndex) => (prevIndex + 1) % words.length);
     }, intervalDuration);
@@ -17,7 +17,6 @@ export default function Hero() {
     return () => clearInterval(interval);
   }, [wordIndex, words.length]);
 
-  // Use a single scroll progress for the entire section
   const { scrollYProgress } = useScroll({
     target: sectionRef,
     offset: ["start start", "end start"],
