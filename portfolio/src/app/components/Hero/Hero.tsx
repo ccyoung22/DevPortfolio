@@ -1,10 +1,21 @@
 "use client";
 import { motion, useScroll, useTransform } from "framer-motion";
-import { useRef } from "react";
+import { useRef, useState, useEffect } from "react";
 import styles from "./Hero.module.css";
 
 export default function Hero() {
   const sectionRef = useRef(null);
+  const [wordIndex, setWordIndex] = useState(0);
+  const words = ["curious", "collaborative", "creative", "Caitlin."];
+
+  useEffect(() => {
+    const intervalDuration = wordIndex === 3 ? 1000 : 500; // 'it.' stays for 1 second, others 0.5 seconds
+    const interval = setInterval(() => {
+      setWordIndex((prevIndex) => (prevIndex + 1) % words.length);
+    }, intervalDuration);
+
+    return () => clearInterval(interval);
+  }, [wordIndex, words.length]);
 
   // Use a single scroll progress for the entire section
   const { scrollYProgress } = useScroll({
@@ -14,8 +25,8 @@ export default function Hero() {
 
   // Create dramatically different transform values for title and description
   // Title moves much faster and further than description
-  const titleY = useTransform(scrollYProgress, [0, 1], [0, -400]);
-  const descriptionY = useTransform(scrollYProgress, [0, 1], [0, -800]);
+  const titleY = useTransform(scrollYProgress, [0, 1], [0, -800]);
+  const descriptionY = useTransform(scrollYProgress, [0, 1], [0, -400]);
 
   return (
     <>
@@ -26,7 +37,8 @@ export default function Hero() {
           initial={{ y: 0 }}
         >
           <h1 className={styles.title}>
-            hi i&apos;m <span className={styles.caitlin}>Caitlin</span>
+            hi {`i'm`}{" "}
+            <span className={styles.caitlin}>{words[wordIndex]}</span>
           </h1>
         </motion.div>
         <motion.div

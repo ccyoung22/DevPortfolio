@@ -22,7 +22,7 @@ export default function Projects() {
               key={index}
               i={index}
               {...project}
-              range={[index * 0.25, 1]}
+              range={[index * 0.21, 1]}
               progress={scrollYProgress}
               targetScale={targetScale}
             />

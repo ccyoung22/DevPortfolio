@@ -23,7 +23,24 @@ export default function Card({
   targetScale,
   range,
   progress,
+  id,
 }: CardProps) {
+  const handleNavigation = (id: string) => {
+    const section = document.querySelector(`[data-id="${id}"]`);
+    if (section) {
+      const parent = section.closest(`.${styles.cardContainer}`);
+      if (parent) {
+        const offsetTop = parent.getBoundingClientRect().top + window.scrollY;
+        window.scrollTo({
+          top: offsetTop,
+          behavior: "smooth",
+        });
+      }
+    } else {
+      console.error("Section not found:", id);
+    }
+  };
+
   const container = useRef(null);
   const { scrollYProgress } = useScroll({
     target: container,
@@ -39,11 +56,15 @@ export default function Card({
           scale,
           top: `calc(-5vh + ${i * 7}vh)`,
         }}
+        data-id={id}
       >
         <div className={styles.titleContainer}>
-          <h2>
+          <button
+            className={styles.projectButton}
+            onClick={() => handleNavigation(id)}
+          >
             <span className={styles.projectText}>Project- {"   "}</span> {title}
-          </h2>
+          </button>
         </div>
 
         <div

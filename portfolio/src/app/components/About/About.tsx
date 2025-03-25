@@ -13,7 +13,7 @@ export default function About() {
 
   const { scrollYProgress } = useScroll({
     target: element,
-    offset: ["start 0.8", "start -0.2"],
+    offset: ["start 0.8", "start 0"],
   });
 
   return (

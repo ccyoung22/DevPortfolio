@@ -5,6 +5,7 @@ export interface Project {
   link: string;
   github: string;
   colour: string;
+  id: string;
 }
 
 export const projects: Project[] = [
@@ -16,6 +17,7 @@ export const projects: Project[] = [
     link: "https://postcard-generator-khaki.vercel.app/",
     github: "https://github.com/SchoolOfCode/Say-It-In-A-Letter",
     colour: "#dfdcdb",
+    id: "SayItInALetter",
   },
   {
     title: "State Of It",
@@ -25,6 +27,7 @@ export const projects: Project[] = [
     link: "https://state-of-it.vercel.app/",
     github: "https://github.com/ccyoung22/StateOfIt",
     colour: "#c8c5c4",
+    id: "StateOfIt",
   },
   {
     title: "Interactive Whiteboard App",
@@ -34,14 +37,16 @@ export const projects: Project[] = [
     link: "https://moodboard-two-ruddy.vercel.app/",
     github: "https://github.com/ccyoung22/Moodboard",
     colour: "#b4b2b0",
+    id: "InteractiveWhiteboardApp",
   },
   {
     title: "Flock",
     description:
-      "A community-driven app designed to help combat loneliness by connecting people through shared interests, conversation prompts, and local events. Built in one week at the School of Code by a team of six, the project aimed to create a safe space where users can find meaningful connections and build their social circles.",
+      "A community-driven app designed to help combat loneliness by connecting people through shared interests, conversation prompts, and local events. Built with Next.js and Typescript.",
     src: "Flock.png",
     link: "https://final-project-flock.vercel.app/",
     github: "https://github.com/Zsolt-qwerty/final-project-flock",
     colour: "#a19f9e",
+    id: "Flock",
   },
 ];

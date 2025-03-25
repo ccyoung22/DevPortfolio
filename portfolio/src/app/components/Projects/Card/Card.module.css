@@ -32,6 +32,13 @@
   font-size: 1.8vh;
 }
 
+.projectButton {
+  background-color: transparent;
+  border: none;
+  font-size: 2.4vh;
+  font-family: "NohemiRegular";
+}
+
 .projectText {
   font-family: "NohemiThin";
 }
@@ -45,12 +52,22 @@
 .linkIcon {
   width: 2.5vw;
   height: 2.5vw;
+  transition: transfrom 0.4s ease;
+}
+
+.linkIcon:hover {
+  transform: scale(1.1);
 }
 
 .icon {
   margin-left: 2vw;
   width: 2.5vw;
   height: 2.5vw;
+  transition: transfrom 0.4s ease;
+}
+
+.icon:hover {
+  transform: scale(1.1);
 }
 
 .bodyContainer {
@@ -90,6 +107,11 @@
   align-items: center;
   box-shadow: 0 1vh 3vh rgba(0, 0, 0, 0.3);
   justify-content: center;
+  transition: transform 0.4s ease;
+}
+
+.imageContainer:hover {
+  transform: scale(1.02);
 }
 
 .inner {

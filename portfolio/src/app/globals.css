@@ -17,6 +17,11 @@ main {
 }
 
 @font-face {
+  font-family: Fraunces;
+  src: url("/Fraunces.ttf");
+}
+
+@font-face {
   font-family: NohemiLight;
   src: url("/Nohemi/Nohemi-Light.ttf");
 }
